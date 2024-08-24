@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="HTML, CSS">
+<meta name="description" content="..."
+<meta http-equiv="X-UA-Compatible" content="1e=edge" >
+
+   <title> NiebGain </title>
+   
+<link rel="stylesheet" href="GainN.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+</head>
+<body>
+
+<div class ="try">
+
+<div class="maxm">
+          <div class="maxm-text" >     
+                    <h1>NiebGain</h1>
+            </div>
+
+                </div>        
+                 
+                     
+ 
+ 
+ <div class="Profile">
+ 
+       <h1>Profile:</h1>
+<a href="GainN.html" class="clos"><i class="fa-solid fa-xmark"></i></a>
+
+   <a href=".html"><img src ="hd.jpg"></a>
+   <p>ID=1100221</p>
+   
+   
+   
+   
+<form onsubmit = "sendEmail(); reset(); return false;">
+
+      <br><h2>For more assistance:⬇️</h2>
+           <div class="emt">
+         <input type="text" id = "text" placeholder= " enter" required><br>     
+                </div>
+                
+                <div class="em">
+         <input type="email" id = "email" placeholder= " email" required><br>     
+                 </div>
+            
+                   <button class="Cf" input type="send" value="send" placeholder="send">Confirm <a href="#"></a></button>
+            
+            
+</form>
+
+</div>
+ </div>
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail(){
+    Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "janiebiet90@gmail.com",
+    Password: "E4CD63BA00FB139DD84C3A3315C5A6D22673",
+    To: "aniebietsolomon62@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "Book a flight",
+    Body: "Text:" + document.getElementById("text").value
++ "<br> Email:" + document.getElementById("email").value
+
+
+}). then(
+message => alert ("Thank you for contacting us! you will receive a email shortly")
+);
+
+}
+</script>
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+  </body> 
+</html> 
